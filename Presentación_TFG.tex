@@ -1,0 +1,72 @@
+\documentclass[aspectratio=43]{beamer}
+
+% Portada
+\title{Diseño e implementación de módulos
+funcionales (Sensores y Telemetría) de OBSW
+para el desarrollo de nanosatélites}
+\author{Jaime García González}
+\institute{Universidad Carlos III de Madrid}
+\date{4 de julio de 2019}
+\titlegraphic{
+\centering
+\includegraphics[width=0.5\textwidth]{uc3m}
+\includegraphics[width=0.25\textwidth]{sener}
+}
+
+% Tema
+\usetheme[usetotalslideindicator]{metropolis}
+
+% Fix tema
+\makeatletter
+\let\@@TOC=\tableofcontents
+\def\tableofcontents[#1]{\bgroup\parskip=0pt\@@TOC[#1]\egroup}
+\makeatother
+\AtBeginDocument{
+  \setbeamertemplate{section in toc}[square]
+  \setbeamertemplate{itemize items}{\raisebox{.5ex}{\rule{.5ex}{.5ex}}}
+  \fontsize{10}{15}\selectfont
+}
+\setbeamercovered{transparent}
+
+% Barra de navegacion inferior
+\setbeamertemplate{navigation symbols}{\vspace{-31pt}{%
+  \insertslidenavigationsymbol\insertframenavigationsymbol%
+  \insertsubsectionnavigationsymbol\insertsectionnavigationsymbol%
+  \insertdocnavigationsymbol\insertbackfindforwardnavigationsymbol}}
+
+% Transparencia inicio sección
+\AtBeginSection{
+\begin{frame}{Contenido}
+  \tableofcontents[hidesubsections,currentsection]
+\end{frame}
+}
+
+% Paquetes
+\usepackage[spanish]{babel}
+\usepackage[utf8]{luainputenc}
+\usepackage{eurosym}
+\usepackage{tikz}
+\usetikzlibrary{chains}
+\usepackage{pgfgantt}
+\graphicspath{ {Figuras/} }
+
+% Macros
+\renewcommand\spanishtablename{Tabla}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Contenido}
+  \tableofcontents[hidesubsections]
+\end{frame}
+
+%% Capítulos
+\input{Introduccion}
+\input{AnalisisDisenno}
+\input{Implementacion}
+\input{PlanDeProyecto}
+\input{Conclusiones}
+\maketitle
+
+\end{document}

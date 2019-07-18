@@ -1,0 +1,114 @@
+\section{Plan de proyecto}
+
+% Gantt de proyecto
+\begin{frame}{Planificación}
+\resizebox{!}{.72\textheight}{
+ \begin{ganttchart}[y unit title=0.7cm,y unit chart=0.6cm,x unit= 0.7 mm, 			hgrid=true, time slot format={little-endian}]{14.09.2018}{30.06.2019} 
+  
+	\gantttitlecalendar{year, month=shortname} \\
+	
+	\ganttmilestone{Presentación del proyecto}{14.09.2018}\\
+
+	\ganttmilestone{Inicio del proyecto}{16.10.2018}\\ 
+  
+	% Planificacion proyecto
+	\ganttgroup{Planificación}{16.10.2018}{20.11.2018} \\
+	\ganttbar{Lectura documentación}{16.10.2018}{27.10.2018}\\
+	\ganttbar{Estudio cFE}{23.10.2018}{02.11.2018} \\
+	\ganttbar{Herramientas alternativas}{04.11.2018}{13.11.2018}\\
+ 
+	% Analisis del sistema y requisitos  
+	\ganttgroup{Análisis y diseño}{20.11.2018}{21.12.2018} \\
+	\ganttbar{Definición de requisitos}{20.11.2018}{05.12.2018} \\
+	\ganttbar{Diseño del sistema}{08.12.2018}{21.12.2018} \\
+	
+	% Implementacion	
+	\ganttgroup{Implementación}{21.12.2018}{06.04.2019} \\
+	\ganttbar{Simulador térmico}{21.12.2018}{20.01.2019}\\
+	\ganttbar{Módulo de telemetría}{24.01.2019}{27.02.2019} \\
+	\ganttbar{Integración}{08.03.2019}{06.04.2019} \\
+
+	% Pruebas
+	\ganttgroup{Pruebas y evaluación}{06.04.2019}{18.04.2019} \\
+	\ganttbar{Pruebas}{06.04.2019}{13.04.2019}\\
+	\ganttbar{Evaluación del sistema}{14.04.2019}{18.04.2019}\\
+	
+	% Documentacion
+	\ganttgroup{Documentación}{24.04.2019}{10.06.2019}\\
+	\ganttbar{Memoria}{24.04.2019}{04.06.2019}\\
+	\ganttbar{Presentación}{06.06.2019}{10.06.2019}\\
+	
+	
+	\ganttmilestone{Entrega del proyecto}{17.06.2019}\\ 
+	
+	%Grupos
+	\ganttlink{elem1}{elem2}
+	\ganttlink{elem2}{elem6}
+	\ganttlink{elem6}{elem9}
+	\ganttlink{elem9}{elem13}
+	\ganttlink{elem13}{elem16}
+	
+	
+	%%Tareas
+	\ganttlink{elem7}{elem8}
+	\ganttlink{elem10}{elem11}
+	\ganttlink{elem11}{elem12}	
+	\ganttlink{elem17}{elem18}
+	\ganttlink{elem17}{elem19}
+
+	
+  \end{ganttchart}
+  }
+
+\end{frame}
+
+
+% Presupuesto
+
+\begin{frame}{Presupuesto}
+
+El proyecto ha tenido una duración aproximada de \textbf{8 meses}. El coste total del mismo asciende a \textbf{14931.47 \euro }.
+
+\begin{table}[h]
+\centering
+		\begin{tabular}{|l|r|}
+		\hline 
+		Descripción & Coste\\
+		\hline
+		\hline
+		Costes de personal & 8560.00 \euro  \\
+		\hline		
+		Amortización & 132.13 \euro  \\
+		\hline
+		Costes indirectos & 282.10  \euro \\
+		\hline
+		Margen de imprevistos (10 \%{}) & 897.46 \euro  \\
+		\hline 
+		Margen de beneficio (25 \%{}) & 2468.02 \euro  \\
+		\hline
+		\hline
+		Total sin I.V.A. & 12340.06 \euro \\
+		\hline
+		\hline
+		\textbf{Total} & \textbf{14931.47 \euro } \\		
+		\hline
+		\end{tabular}
+		\caption{Resumen de costes}
+\end{table}
+
+\end{frame}
+
+% Marco legal
+
+\begin{frame}{Marco legal}
+
+El proyecto está sujeto a las siguientes leyes/normativas:
+
+\begin{itemize}
+\item \textbf{Tratado sobre el espacio exterior.} Control de actividades espaciales de los Estados, registro de lanzamientos, etc. 
+\item \textbf{CCSDS.} Desarrollo de estándares para misiones espaciales.
+\item \textbf{ECSS.} Desarrollo de estándares para misiones espaciales a nivel europeo.
+\item \textbf{CNAF.} Control de radiofrecuencias en el territorio nacional.
+\end{itemize}
+
+\end{frame}
